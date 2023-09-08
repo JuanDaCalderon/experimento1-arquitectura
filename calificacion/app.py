@@ -1,4 +1,4 @@
-from calificacion1 import create_app
+from calificacion import create_app
 from .modelos import db
 from flask_restful import Api
 from .vistas import VistaCalificacion

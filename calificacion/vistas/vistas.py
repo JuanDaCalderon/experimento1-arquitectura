@@ -1,9 +1,7 @@
 from flask import request
 from flask_restful import Resource
-from ..modelos import db, Usuario, UsuarioSchema, Preguntas, PreguntasSchema 
+from ..modelos import db, Usuario, Preguntas
 
-usuario_schema = UsuarioSchema()
-pregunta_schema = PreguntasSchema()
     
 class VistaCalificacion(Resource):
     def post(self):

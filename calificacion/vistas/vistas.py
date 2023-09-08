@@ -7,7 +7,7 @@ import random
     
 class VistaCalificacion(Resource):
     def post(self):
-        error = random.randint(1, 100)
+        error = random.randint(1, 20)
         usuario = Usuario.query.filter(Usuario.id == request.json["usuario"]).first()
         calificacion = 0
         preguntas = Preguntas.query.all()

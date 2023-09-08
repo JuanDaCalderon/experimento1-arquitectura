@@ -1,10 +1,13 @@
+from ..env import INTRODUCE_ERROR
 from flask import request
 from flask_restful import Resource
 from ..modelos import db, Usuario, Preguntas
+import random
 
     
 class VistaCalificacion(Resource):
     def post(self):
+        error = random.randint(1, 100)
         usuario = Usuario.query.filter(Usuario.id == request.json["usuario"]).first()
         calificacion = 0
         preguntas = Preguntas.query.all()
@@ -12,6 +15,9 @@ class VistaCalificacion(Resource):
             if request.json["preguntas"][index]['respuesta'] == preguntas[index].respuesta:
                 calificacion += 1
         
+        if INTRODUCE_ERROR == True and 5 <= error <= 10:
+            calificacion = -error
+            
         usuario.calificacion = calificacion
         db.session.commit()
         return { "calificacion": calificacion }

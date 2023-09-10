@@ -15,7 +15,7 @@ class VistaCalificacion(Resource):
             if request.json["preguntas"][index]['respuesta'] == preguntas[index].respuesta:
                 calificacion += 1
         
-        if INTRODUCE_ERROR == True and 5 <= error <= 10:
+        if INTRODUCE_ERROR == True and 30 <= error <= 40:
             calificacion = -error
             
         usuario.calificacion = calificacion

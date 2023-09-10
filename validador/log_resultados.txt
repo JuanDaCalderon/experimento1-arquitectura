@@ -32,3 +32,22 @@ solicitud: 270, tiempo de respuesta, 0:00:00
 solicitud: 271, envio solicitud, 2023-09-10 00:55:50.268392
 solicitud: 271, exitosa, 2023-09-10 00:55:56.444226
 solicitud: 271, tiempo de respuesta, 0:00:00
+solicitud: 272, envio solicitud, 2023-09-10 01:14:53.340988
+solicitud: 272, exitosa, 2023-09-10 01:14:59.532730
+solicitud: 272, tiempo de respuesta, 0:00:06.191742
+solicitud: 273, envio solicitud, 2023-09-10 01:15:58.070015
+solicitud: 273, exitosa, 2023-09-10 01:16:04.239750
+solicitud: 273, tiempo de respuesta, 0:00:06.169735
+solicitud: 274, envio solicitud, 2023-09-10 01:16:51.730622
+solicitud: 274, exitosa, 2023-09-10 01:16:57.895775
+solicitud: 274, tiempo de respuesta, 6.165153
+solicitud: 275, envio solicitud, 2023-09-10 01:47:21.823851
+solicitud: 275, exitosa, 2023-09-10 01:47:28.030200
+solicitud: 275, tiempo de respuesta, 6.206349
+solicitud: 276, envio solicitud, 2023-09-10 01:49:26.686952
+solicitud: 277, envio solicitud, 2023-09-10 01:49:54.934879
+solicitud: 278, envio solicitud, 2023-09-10 02:13:29.977506
+solicitud: 279, envio solicitud, 2023-09-10 02:18:29.602811
+solicitud: 280, envio solicitud, 2023-09-10 02:20:11.686928
+solicitud: 281, envio solicitud, 2023-09-10 02:20:44.480256
+solicitud: 282, envio solicitud, 2023-09-10 02:41:19.631830

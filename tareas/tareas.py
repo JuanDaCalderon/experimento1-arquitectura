@@ -4,7 +4,7 @@ import requests
 
 celery_app = Celery(__name__, broker='redis://localhost:6379/0', backend='redis://localhost:6379/0',)
 
-
+# se crea metodo con cola1 para el primer microservicio
 @celery_app.task(queue="cola1")
 def enviarSolicitudACalificacion1(body, horaEnvio):
     calificacion1 = requests.post("http://localhost:5001/calificacion", json=body)  
@@ -16,6 +16,7 @@ def enviarSolicitudACalificacion1(body, horaEnvio):
             
     return calificacion1.json()['calificacion']
 
+# se crea metodo con cola2 para el segundo microservicio
 @celery_app.task(queue="cola2")
 def enviarSolicitudACalificacion2(body, horaEnvio):
     calificacion2 = requests.post("http://localhost:5002/calificacion", json=body)
@@ -26,6 +27,7 @@ def enviarSolicitudACalificacion2(body, horaEnvio):
             file.close()
     return calificacion2.json()['calificacion']
     
+# se crea metodo con cola3 para el tercer microservicio
 @celery_app.task(queue="cola3")
 def enviarSolicitudACalificacion3(body, horaEnvio):
     calificacion3 = requests.post("http://localhost:5003/calificacion", json=body)

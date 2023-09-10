@@ -11,4 +11,5 @@ db.init_app(app)
 db.create_all()
 
 api = Api(app)
+# ruta para consumir el validador 
 api.add_resource(VistaValidador, '/validador')

@@ -3,6 +3,7 @@ from flask import request
 from flask_restful import Resource
 from tareas import enviarSolicitudACalificacion1, enviarSolicitudACalificacion2, enviarSolicitudACalificacion3
 
+#metodo principal para ejecutar el validador
 class VistaValidador(Resource):
     def post(self):
         horaEnvio = datetime.utcnow()

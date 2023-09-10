@@ -11,4 +11,5 @@ db.init_app(app)
 db.create_all()
 
 api = Api(app)
+#la ruta a consumir
 api.add_resource(VistaCalificacion, '/calificacion')

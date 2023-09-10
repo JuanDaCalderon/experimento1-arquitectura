@@ -4,7 +4,7 @@ from flask_restful import Resource
 from ..modelos import db, Usuario, Preguntas
 import random
 
-    
+ #Vista del microservicio 2    
 class VistaCalificacion(Resource):
     def post(self):
         error = random.randint(1, 100)

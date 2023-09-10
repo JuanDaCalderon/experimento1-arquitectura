@@ -4,7 +4,7 @@ from flask import request
 from flask_restful import Resource
 from ..modelos import db, Usuario, Preguntas
 import random
-from time import gmtime, strftime, delta
+from time import gmtime, strftime
 
 
 class VistaValidador(Resource):

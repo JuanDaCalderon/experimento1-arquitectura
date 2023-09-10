@@ -4,7 +4,7 @@ from flask import request
 from flask_restful import Resource
 from ..modelos import db, Usuario, Preguntas
 import random
-from tareas import enviarSolicitudACalificacion
+from tareas import enviarSolicitudACalificacion, solicitudes
 
 class VistaValidador(Resource):
     def post(self):
